@@ -22,6 +22,10 @@ describe('pingPong', function() {
 	it("returns 'Please Enter a Valid Number' when a string is the input", function() {
 		expect(pingPong("blahblah")).to.eql(["Please Enter a Valid Number"]);
 	});
+
+		it("returns error message -1 is the input", function() {
+		expect(pingPong(-1)).to.eql(["Please Enter a Number Greater Than 0"]);
+	});
 	
 
 });
