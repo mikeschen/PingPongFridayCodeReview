@@ -3,5 +3,19 @@
 }
 
 body {
-	background-color: #554854;
+	color: #443266;
+	background-color: #1E2B66;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 17px;
+}
+
+img {
+	margin-bottom: 15px;
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	}
+
+.rules {
+	font-size: 19px;
 }
