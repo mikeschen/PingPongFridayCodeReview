@@ -1,19 +1,21 @@
 var pingPong = function(numberInput) {
   var pingPongs = [];
-  for (var i = 1; i <= numberInput; i++) {
-    if (i === 3) {
-       pingPongs.push("ping");
+  if (isNaN(numberInput)) {
+    pingPongs.push("Please Enter a Valid Number");
+  } else {
+      for (var i = 1; i <= numberInput; i++) {
+        if (i % 15 === 0) {
+          pingPongs.push("pingpong");
+        } else if (i % 3 === 0) {
+           pingPongs.push("ping");
+        } else if (i % 5 === 0) {
+          pingPongs.push("pong");
+        } else {
+          pingPongs.push(i);
+        }
+      }
     }
-    else if (i === 5) {
-      pingPongs.push("pong");
-    }
-    else if (i === 15) {
-      pingPongs.push("pingpong");
-    } else {
-    pingPongs.push(i);
-    }
-  };
-    return pingPongs;
+  return pingPongs;
 };
 
 
