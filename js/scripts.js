@@ -22,14 +22,14 @@ var pingPong = function(numberInput) {
 
 $(document).ready(function() {
   $("form#pingponger").submit(function(event) {
-    var number = $("input#numInput").val();
+    var number = parseInt($("input#numInput").val());
     var results = pingPong(number);
     $("#numResult").empty().append(results.join("<br>"));
     $("#result").show();
     event.preventDefault();
   });
   $("form#Reset").submit(function(event) {
-    $("numberName")[0].reset();
+    $("numResult")[0].reset();
     event.preventDefault();
   });
 });
