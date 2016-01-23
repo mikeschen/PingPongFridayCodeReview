@@ -11,11 +11,11 @@ describe('pingPong', function() {
 		expect(pingPong(5)).to.eql([1,2,"ping",4,"pong"]);
 	});
 
-	it("returns 2 'pong's and 3 'ping's when 10 is the input", function() {
+	it("returns 2 pongs and 3 pings when 10 is the input", function() {
 		expect(pingPong(10)).to.eql([1,2,"ping",4,"pong","ping",7,8,"ping","pong"]);
 	});
 
-	it("returns 2 'pong's and 4 'ping's and a 'pingpong' when 15 is the input", function() {
+	it("returns 2 pongs and 4 pings and a pingpong when 15 is the input", function() {
 		expect(pingPong(15)).to.eql([1,2,"ping",4,"pong","ping",7,8,"ping","pong", 11, "ping", 13, 14, "pingpong"]);
 	});
 
